@@ -1,0 +1,298 @@
+@import "font_family";
+
+$border: solid red 1px;
+$font_color_red: red;
+$font_color_white: white;
+$font_color_dark: #333333;
+$font_color_dark_red: #7a0000;
+$backgrond_color_white: #ffffff;
+$backgrond_color_red: red;
+$backgrond_color_gray: #CACACA;
+
+@mixin rounded_borders($color, $width: 5px, $rounding: 5px)
+{
+  -moz-border-radius: $rounding $rounding;
+  -webkit-border-radius: $rounding $rounding; 
+  -khtml-border-radius: $rounding $rounding;
+  -o-border-radius: $rounding $rounding;
+  border-radius: $rounding $rounding;
+  border: $width $color solid; }
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $lucida;	
+}
+
+p{
+font-family: inherit;
+font-weight: normal;
+font-size: 1rem;
+line-height: 1.6;
+margin-bottom: 0rem;
+text-rendering: optimizeLegibility;
+}
+
+a{
+	color: $font_color_red;
+}
+
+a:hover, a:focus{
+	color: $font_color_dark_red;
+}
+
+body{
+
+	font-family: $lucida !important;
+	background: $backgrond_color_gray;
+}
+
+.top-bar{
+	background-color:$backgrond_color_white;
+	font-family: $lucida;
+	margin-bottom: 20px;
+	margin-top: 20px;
+		.name{
+			h1{
+				a{
+				color: $font_color_red;
+				}
+			}	
+		}
+}
+
+.top-bar-section ul{
+		text-align: center;
+		background: $backgrond_color_white;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button){
+	background: $backgrond_color_white;
+	color: $font_color_red;
+	font-family: $lucida;
+	
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+	color:$font_color_dark_red;
+	background: none;
+}
+
+.top-bar-section ul li.active > a{
+	color:$font_color_white;
+	background: $backgrond_color_red;
+}
+
+/* style for class with text character of "chuck obaze jump page"*/
+.top-bar .name h1 a{
+	font-weight: bolder;
+	font-family: $lucida;
+}
+
+.top-bar .name h1 a:hover{
+	color:$font_color_dark_red;
+}
+
+.top-bar .name h1 a:active{
+	color:$font_color_white;
+	background: $backgrond_color_red;
+}
+/* end style for class with text character of "chuck obaze jump page"*/
+
+/*----media query start------*/
+
+.top-bar .toggle-topbar.menu-icon a{
+	color: $font_color_red;
+	font-family: $lucida;
+}
+
+.top-bar.expanded .title-area{
+	background: $backgrond_color_white;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a{
+	color:$font_color_dark_red;
+}
+
+.top-bar-section ul li > a{
+	color: $font_color_red;
+	background: $backgrond_color_white;
+	font-family: $lucida;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+	background: $backgrond_color_white;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+	color: $font_color_dark_red;
+}
+
+.panel{
+	background: $backgrond_color_white;
+	border: none;
+}
+
+.large-12 .panel{
+
+	> h1{
+	text-align: center;
+	color: $font_color_dark;
+	font-weight: bolder;
+	margin-bottom: 15px;
+	}
+	
+	>h4{
+	text-align: center;
+	color: $font_color_dark;
+	font-weight: bolder;
+	margin-bottom: 25px;
+	}
+	
+	> p{
+	width: 85%;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	}
+	
+	a{
+		color: $font_color_white;
+	}
+	
+	>h3{
+	@include rounded_borders($backgrond_color_red, 3px);
+	background-color: $backgrond_color_red;
+	padding: 20px;
+	color: $font_color_white;
+	width: 230px;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	}
+
+}
+
+.large-12 .panel a:hover{
+	color: $font_color_dark_red;
+}
+
+.large-3 .panel{
+ 
+	> p{
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+	}
+	
+	> h4{
+	font-weight: bolder;
+	text-align: center;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	
+	.large-12 .panel{
+	
+		> p{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 0.91rem;
+		}	
+	}
+	
+	.large-3 .panel{
+ 
+		> p{
+		font-size: 0.9rem;
+		width: 100%;
+		text-align: center;
+		}
+		
+		> h4{
+		font-weight: bolder;
+		text-align: center;
+		}
+
+	}
+	
+	.linkage{
+		margin: 0 auto;
+		width: 100%;
+		
+		>p{
+		text-align: center;
+		}
+	}
+	
+	.top-bar-section ul{
+		text-align: center;
+		background: $backgrond_color_white;
+		>li{
+		border-top: $border;
+		}
+	}
+	
+	.top-bar.expanded .toggle-topbar a::after{
+		box-shadow: 0 10px 0 1px $font_color_red, 0 16px 0 1px $font_color_red, 0 22px 0 1px $font_color_red;
+	}
+	
+	.top-bar .toggle-topbar.menu-icon a::after{
+		box-shadow: 0 10px 0 1px $font_color_red, 0 16px 0 1px $font_color_red, 0 22px 0 1px $font_color_red;
+	}
+	
+	.top-bar .toggle-topbar.menu-icon a:hover{
+		color: $font_color_dark_red;
+	}
+	
+	.top-bar .toggle-topbar.menu-icon a:hover:after{
+		box-shadow: 0 10px 0 1px $font_color_dark_red, 0 16px 0 1px $font_color_dark_red, 0 22px 0 1px $font_color_dark_red;
+	}
+	
+	.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+	color:$font_color_dark_red;
+	background: none;
+	}
+
+ }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.large-12 .panel{
+	
+		> p{
+		width: 100%;
+		margin: 0 auto;
+		}	
+	}
+	
+	.large-3 .panel{
+ 
+		> p{
+		font-size: 0.9rem;
+		width: 100%;
+		text-align: center;
+		}
+		
+		> h4{
+		font-weight: bolder;
+		text-align: center;
+		}
+
+	}
+	
+	.linkage{
+		margin: 0 auto;
+		width: 100%;
+		
+		>p{
+		text-align: center;
+		}
+	}
+	
+	.top-bar-section ul{
+		text-align: center;
+	}	
+}
+
+
+
+
