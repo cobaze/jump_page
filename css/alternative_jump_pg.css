@@ -1,0 +1,380 @@
+/* START FONT FAMILY*/
+/* END FONT FAMILY*/
+/* line 39, ../sass/alternative_jump_pg.scss */
+body {
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+
+/* line 43, ../sass/alternative_jump_pg.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+  margin: 0;
+}
+
+/* line 48, ../sass/alternative_jump_pg.scss */
+p {
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+
+/*----Header Style Start---------*/
+/* line 54, ../sass/alternative_jump_pg.scss */
+.large-12.columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 58, ../sass/alternative_jump_pg.scss */
+.large-12.columns .panel {
+  margin-bottom: 0rem;
+  padding: 0.25rem;
+}
+/* line 64, ../sass/alternative_jump_pg.scss */
+.large-12.columns .panel .row > h1 {
+  margin: 0em 0;
+}
+
+/* line 71, ../sass/alternative_jump_pg.scss */
+.top-bar {
+  background-color: #f2f2f2;
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+/* line 77, ../sass/alternative_jump_pg.scss */
+.top-bar .name h1 a {
+  color: red;
+}
+
+/* line 84, ../sass/alternative_jump_pg.scss */
+.top-bar .name h1 a {
+  font-weight: bolder;
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+
+/* line 89, ../sass/alternative_jump_pg.scss */
+.top-bar .name h1 a:hover {
+  color: #7a0000;
+}
+
+/* line 93, ../sass/alternative_jump_pg.scss */
+.top-bar .name h1 a:active {
+  color: white;
+  background: red;
+}
+
+/* line 98, ../sass/alternative_jump_pg.scss */
+.top-bar-section ul {
+  text-align: center;
+  background: #f2f2f2;
+}
+
+/* line 103, ../sass/alternative_jump_pg.scss */
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background: #f2f2f2;
+  color: red;
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+
+/* line 110, ../sass/alternative_jump_pg.scss */
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+  color: #7a0000;
+  background: none;
+}
+
+/* line 115, ../sass/alternative_jump_pg.scss */
+.top-bar-section ul li.active > a {
+  color: white;
+  background: red;
+}
+
+/* line 120, ../sass/alternative_jump_pg.scss */
+.top-bar .toggle-topbar.menu-icon a {
+  color: red;
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+
+/* line 125, ../sass/alternative_jump_pg.scss */
+.top-bar.expanded .title-area {
+  background: white;
+}
+
+/* line 129, ../sass/alternative_jump_pg.scss */
+.top-bar-section ul li:hover:not(.has-form) > a {
+  color: #7a0000;
+}
+
+/* line 133, ../sass/alternative_jump_pg.scss */
+.top-bar-section ul li > a {
+  color: red;
+  background: white;
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+
+/* line 139, ../sass/alternative_jump_pg.scss */
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: white;
+}
+
+/* line 143, ../sass/alternative_jump_pg.scss */
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  color: #7a0000;
+}
+
+/*---- End Header Style-----*/
+/*---- Start First Section Style-----*/
+/* line 151, ../sass/alternative_jump_pg.scss */
+.large-12.columns.second {
+  margin-bottom: 35px;
+  padding-top: 20px;
+}
+/* line 154, ../sass/alternative_jump_pg.scss */
+.large-12.columns.second > h1 {
+  text-align: center;
+  color: #333333;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+/* line 162, ../sass/alternative_jump_pg.scss */
+.large-12.columns.second > h4 {
+  text-align: center;
+  color: #333333;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+/* line 169, ../sass/alternative_jump_pg.scss */
+.large-12.columns.second > p {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+/* line 174, ../sass/alternative_jump_pg.scss */
+.large-12.columns.second a {
+  color: white;
+}
+/* line 178, ../sass/alternative_jump_pg.scss */
+.large-12.columns.second > h3 {
+  -moz-border-radius: 5px 5px;
+  -webkit-border-radius: 5px 5px;
+  -khtml-border-radius: 5px 5px;
+  -o-border-radius: 5px 5px;
+  border-radius: 5px 5px;
+  border: 3px red solid;
+  background-color: red;
+  padding: 20px;
+  color: white;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 190, ../sass/alternative_jump_pg.scss */
+.large-12.columns.second a:hover {
+  color: #7a0000;
+}
+
+/*---- End First Section Style-----*/
+/*---- Start Second Section Style-----*/
+/* line 200, ../sass/alternative_jump_pg.scss */
+.large-12.columns.third .panel {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/* line 206, ../sass/alternative_jump_pg.scss */
+.large-12.columns.third .panel .row > h2 {
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+/* line 216, ../sass/alternative_jump_pg.scss */
+.large-3.columns .panel {
+  padding: 1.25rem;
+}
+/* line 219, ../sass/alternative_jump_pg.scss */
+.large-3.columns .panel > p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+/* line 224, ../sass/alternative_jump_pg.scss */
+.large-3.columns .panel > h4 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 232, ../sass/alternative_jump_pg.scss */
+.linkage {
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 236, ../sass/alternative_jump_pg.scss */
+.linkage > p {
+  margin-bottom: 0;
+  font-size: small;
+}
+/* line 241, ../sass/alternative_jump_pg.scss */
+.linkage a {
+  color: red;
+}
+/* line 245, ../sass/alternative_jump_pg.scss */
+.linkage a:hover {
+  color: #7a0000;
+}
+
+/*---- End Second Section Style-----*/
+/*---- Start Third Section Style-----*/
+/* line 257, ../sass/alternative_jump_pg.scss */
+.large-12.columns.fourth .row > h2 {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* line 263, ../sass/alternative_jump_pg.scss */
+.large-12.columns.fourth .row > p {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* line 272, ../sass/alternative_jump_pg.scss */
+.large-12.columns.fourth > p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*---- End Third Section Style-----*/
+@media only screen and (max-width: 40em) {
+  /* line 284, ../sass/alternative_jump_pg.scss */
+  .top-bar-section li.active:not(.has-form) a:not(.button) {
+    background-color: #f2f2f2;
+  }
+
+  /* line 288, ../sass/alternative_jump_pg.scss */
+  .large-12.columns.second {
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  /* line 293, ../sass/alternative_jump_pg.scss */
+  .large-12.columns.second > p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* line 304, ../sass/alternative_jump_pg.scss */
+  .large-3.columns .panel {
+    padding: 1.25rem;
+    margin-bottom: 0.9375rem;
+  }
+  /* line 308, ../sass/alternative_jump_pg.scss */
+  .large-3.columns .panel > p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  /* line 314, ../sass/alternative_jump_pg.scss */
+  .large-3.columns .panel > h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* line 322, ../sass/alternative_jump_pg.scss */
+  .linkage {
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* line 326, ../sass/alternative_jump_pg.scss */
+  .linkage > p {
+    margin-bottom: 0;
+    font-size: small;
+    text-align: center;
+  }
+  /* line 332, ../sass/alternative_jump_pg.scss */
+  .linkage a {
+    color: red;
+  }
+  /* line 336, ../sass/alternative_jump_pg.scss */
+  .linkage a:hover {
+    color: #7a0000;
+  }
+
+  /*---- Start "Menu Toggle" Style-----*/
+  /* line 343, ../sass/alternative_jump_pg.scss */
+  .top-bar .toggle-topbar.menu-icon a::after {
+    box-shadow: 0 10px 0 1px red, 0 16px 0 1px red, 0 22px 0 1px red;
+  }
+
+  /* line 347, ../sass/alternative_jump_pg.scss */
+  .top-bar .toggle-topbar.menu-icon a:hover {
+    color: #7a0000;
+  }
+
+  /* line 351, ../sass/alternative_jump_pg.scss */
+  .top-bar .toggle-topbar.menu-icon a:hover:after {
+    box-shadow: 0 10px 0 1px #7a0000, 0 16px 0 1px #7a0000, 0 22px 0 1px #7a0000;
+  }
+
+  /* line 355, ../sass/alternative_jump_pg.scss */
+  .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    color: #7a0000;
+    background: none;
+  }
+
+  /*---- End "Menu Toggle" Style-----*/
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 365, ../sass/alternative_jump_pg.scss */
+  .large-12.columns.second {
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  /* line 369, ../sass/alternative_jump_pg.scss */
+  .large-12.columns.second > p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  /* line 379, ../sass/alternative_jump_pg.scss */
+  .large-3.columns .panel {
+    padding: 1.20rem;
+    margin-bottom: 0.9375rem;
+  }
+  /* line 383, ../sass/alternative_jump_pg.scss */
+  .large-3.columns .panel > p {
+    font-size: 1.0rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  /* line 389, ../sass/alternative_jump_pg.scss */
+  .large-3.columns .panel > h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* line 397, ../sass/alternative_jump_pg.scss */
+  .linkage {
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* line 401, ../sass/alternative_jump_pg.scss */
+  .linkage > p {
+    margin-bottom: 0;
+    font-size: small;
+    text-align: center;
+  }
+  /* line 407, ../sass/alternative_jump_pg.scss */
+  .linkage a {
+    color: red;
+  }
+  /* line 411, ../sass/alternative_jump_pg.scss */
+  .linkage a:hover {
+    color: #7a0000;
+  }
+}

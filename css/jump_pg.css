@@ -44,114 +44,111 @@ body {
 }
 
 /* line 64, ../sass/jump_pg.scss */
+.top-bar .name h1 a {
+  font-weight: bolder;
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+}
+
+/* line 69, ../sass/jump_pg.scss */
+.top-bar .name h1 a:hover {
+  color: #7a0000;
+}
+
+/* line 73, ../sass/jump_pg.scss */
+.top-bar .name h1 a:active {
+  color: white;
+  background: red;
+}
+
+/* line 78, ../sass/jump_pg.scss */
 .top-bar-section ul {
   text-align: center;
   background: white;
 }
 
-/* line 69, ../sass/jump_pg.scss */
+/* line 83, ../sass/jump_pg.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: white;
   color: red;
   font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
 }
 
-/* line 76, ../sass/jump_pg.scss */
+/* line 90, ../sass/jump_pg.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
   color: #7a0000;
   background: none;
 }
 
-/* line 81, ../sass/jump_pg.scss */
+/* line 95, ../sass/jump_pg.scss */
 .top-bar-section ul li.active > a {
   color: white;
   background: red;
 }
 
-/* style for class with text character of "chuck obaze jump page"*/
-/* line 87, ../sass/jump_pg.scss */
-.top-bar .name h1 a {
-  font-weight: bolder;
-  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
-}
-
-/* line 92, ../sass/jump_pg.scss */
-.top-bar .name h1 a:hover {
-  color: #7a0000;
-}
-
-/* line 96, ../sass/jump_pg.scss */
-.top-bar .name h1 a:active {
-  color: white;
-  background: red;
-}
-
-/* end style for class with text character of "chuck obaze jump page"*/
-/*----media query start------*/
-/* line 104, ../sass/jump_pg.scss */
+/* line 100, ../sass/jump_pg.scss */
 .top-bar .toggle-topbar.menu-icon a {
   color: red;
   font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
 }
 
-/* line 109, ../sass/jump_pg.scss */
+/* line 105, ../sass/jump_pg.scss */
 .top-bar.expanded .title-area {
   background: white;
 }
 
-/* line 113, ../sass/jump_pg.scss */
+/* line 109, ../sass/jump_pg.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
   color: #7a0000;
 }
 
-/* line 117, ../sass/jump_pg.scss */
+/* line 113, ../sass/jump_pg.scss */
 .top-bar-section ul li > a {
   color: red;
   background: white;
   font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
 }
 
-/* line 123, ../sass/jump_pg.scss */
+/* line 119, ../sass/jump_pg.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: white;
 }
 
-/* line 127, ../sass/jump_pg.scss */
+/* line 123, ../sass/jump_pg.scss */
 .top-bar-section li:not(.has-form) a:not(.button):hover {
   color: #7a0000;
 }
 
-/* line 131, ../sass/jump_pg.scss */
+/* line 127, ../sass/jump_pg.scss */
 .panel {
   background: white;
   border: none;
 }
 
-/* line 138, ../sass/jump_pg.scss */
+/* line 134, ../sass/jump_pg.scss */
 .large-12 .panel > h1 {
   text-align: center;
   color: #333333;
   font-weight: bolder;
   margin-bottom: 15px;
 }
-/* line 145, ../sass/jump_pg.scss */
+/* line 141, ../sass/jump_pg.scss */
 .large-12 .panel > h4 {
   text-align: center;
   color: #333333;
   font-weight: bolder;
   margin-bottom: 25px;
 }
-/* line 152, ../sass/jump_pg.scss */
+/* line 148, ../sass/jump_pg.scss */
 .large-12 .panel > p {
   width: 85%;
   margin: 0 auto;
   font-size: 1.1rem;
 }
-/* line 158, ../sass/jump_pg.scss */
+/* line 154, ../sass/jump_pg.scss */
 .large-12 .panel a {
   color: white;
 }
-/* line 162, ../sass/jump_pg.scss */
+/* line 158, ../sass/jump_pg.scss */
 .large-12 .panel > h3 {
   -moz-border-radius: 5px 5px;
   -webkit-border-radius: 5px 5px;
@@ -168,118 +165,118 @@ body {
   text-align: center;
 }
 
-/* line 175, ../sass/jump_pg.scss */
+/* line 171, ../sass/jump_pg.scss */
 .large-12 .panel a:hover {
   color: #7a0000;
 }
 
-/* line 181, ../sass/jump_pg.scss */
+/* line 177, ../sass/jump_pg.scss */
 .large-3 .panel > p {
   font-size: 0.9rem;
   margin-bottom: 15px;
 }
-/* line 186, ../sass/jump_pg.scss */
+/* line 182, ../sass/jump_pg.scss */
 .large-3 .panel > h4 {
   font-weight: bolder;
   text-align: center;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 196, ../sass/jump_pg.scss */
+  /* line 192, ../sass/jump_pg.scss */
   .large-12 .panel > p {
     width: 100%;
     margin: 0 auto;
     font-size: 0.91rem;
   }
 
-  /* line 205, ../sass/jump_pg.scss */
+  /* line 201, ../sass/jump_pg.scss */
   .large-3 .panel > p {
     font-size: 0.9rem;
     width: 100%;
     text-align: center;
   }
-  /* line 211, ../sass/jump_pg.scss */
+  /* line 207, ../sass/jump_pg.scss */
   .large-3 .panel > h4 {
     font-weight: bolder;
     text-align: center;
   }
 
-  /* line 218, ../sass/jump_pg.scss */
+  /* line 214, ../sass/jump_pg.scss */
   .linkage {
     margin: 0 auto;
     width: 100%;
   }
-  /* line 222, ../sass/jump_pg.scss */
+  /* line 218, ../sass/jump_pg.scss */
   .linkage > p {
     text-align: center;
   }
 
-  /* line 227, ../sass/jump_pg.scss */
+  /* line 223, ../sass/jump_pg.scss */
   .top-bar-section ul {
     text-align: center;
     background: white;
   }
-  /* line 230, ../sass/jump_pg.scss */
+  /* line 226, ../sass/jump_pg.scss */
   .top-bar-section ul > li {
     border-top: solid red 1px;
   }
 
-  /* line 235, ../sass/jump_pg.scss */
+  /* line 231, ../sass/jump_pg.scss */
   .top-bar.expanded .toggle-topbar a::after {
     box-shadow: 0 10px 0 1px red, 0 16px 0 1px red, 0 22px 0 1px red;
   }
 
-  /* line 239, ../sass/jump_pg.scss */
+  /* line 235, ../sass/jump_pg.scss */
   .top-bar .toggle-topbar.menu-icon a::after {
     box-shadow: 0 10px 0 1px red, 0 16px 0 1px red, 0 22px 0 1px red;
   }
 
-  /* line 243, ../sass/jump_pg.scss */
+  /* line 239, ../sass/jump_pg.scss */
   .top-bar .toggle-topbar.menu-icon a:hover {
     color: #7a0000;
   }
 
-  /* line 247, ../sass/jump_pg.scss */
+  /* line 243, ../sass/jump_pg.scss */
   .top-bar .toggle-topbar.menu-icon a:hover:after {
     box-shadow: 0 10px 0 1px #7a0000, 0 16px 0 1px #7a0000, 0 22px 0 1px #7a0000;
   }
 
-  /* line 251, ../sass/jump_pg.scss */
+  /* line 247, ../sass/jump_pg.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
     color: #7a0000;
     background: none;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 261, ../sass/jump_pg.scss */
+  /* line 257, ../sass/jump_pg.scss */
   .large-12 .panel > p {
     width: 100%;
     margin: 0 auto;
   }
 
-  /* line 269, ../sass/jump_pg.scss */
+  /* line 265, ../sass/jump_pg.scss */
   .large-3 .panel > p {
     font-size: 0.9rem;
     width: 100%;
     text-align: center;
   }
-  /* line 275, ../sass/jump_pg.scss */
+  /* line 271, ../sass/jump_pg.scss */
   .large-3 .panel > h4 {
     font-weight: bolder;
     text-align: center;
   }
 
-  /* line 282, ../sass/jump_pg.scss */
+  /* line 278, ../sass/jump_pg.scss */
   .linkage {
     margin: 0 auto;
     width: 100%;
   }
-  /* line 286, ../sass/jump_pg.scss */
+  /* line 282, ../sass/jump_pg.scss */
   .linkage > p {
     text-align: center;
   }
 
-  /* line 291, ../sass/jump_pg.scss */
+  /* line 287, ../sass/jump_pg.scss */
   .top-bar-section ul {
     text-align: center;
   }

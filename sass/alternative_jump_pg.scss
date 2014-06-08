@@ -1,0 +1,431 @@
+@import "font_family";
+
+$border: solid red 1px;
+$font_color_red: red;
+$font_color_white: white;
+$font_color_dark: #333333;
+$font_color_dark_red: #7a0000;
+$backgrond_color_white: #ffffff;
+$backgrond_color_red: red;
+$backgrond_color_gray: #CACACA;
+$backgrond_color_light_gray:#f2f2f2;
+
+@mixin rounded_borders($color, $width: 5px, $rounding: 5px)
+{
+  -moz-border-radius: $rounding $rounding;
+  -webkit-border-radius: $rounding $rounding; 
+  -khtml-border-radius: $rounding $rounding;
+  -o-border-radius: $rounding $rounding;
+  border-radius: $rounding $rounding;
+  border: $width $color solid;
+}
+
+@mixin h2_style{
+	text-align: center;
+	font-weight: bolder;
+}
+
+@mixin panel_style{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+@mixin para{
+	width: 85%;
+	margin: 0 auto;
+}
+
+
+body{
+	font-family: $lucida;	
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $lucida;
+	margin: 0;
+}
+
+p{
+	font-family: $lucida;
+}
+
+/*----Header Style Start---------*/
+
+.large-12.columns{
+	padding-left: 0;
+	padding-right: 0;
+
+	.panel{
+		margin-bottom: 0rem;
+		padding: 0.25rem;
+
+		.row{
+
+			>h1{
+				margin: 0em 0;
+			}
+		}
+	}
+}
+
+.top-bar{
+	background-color:$backgrond_color_light_gray;
+	font-family: $lucida;
+	
+		.name{
+			h1{
+				a{
+				color: $font_color_red;
+				}
+			}	
+		}
+}
+
+.top-bar .name h1 a{
+	font-weight: bolder;
+	font-family: $lucida;
+}
+
+.top-bar .name h1 a:hover{
+	color:$font_color_dark_red;
+}
+
+.top-bar .name h1 a:active{
+	color:$font_color_white;
+	background: $backgrond_color_red;
+}
+
+.top-bar-section ul{
+		text-align: center;
+		background: $backgrond_color_light_gray;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button){
+	background: $backgrond_color_light_gray;
+	color: $font_color_red;
+	font-family: $lucida;
+	
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+	color:$font_color_dark_red;
+	background: none;
+}
+
+.top-bar-section ul li.active > a{
+	color:$font_color_white;
+	background: $backgrond_color_red;
+}
+
+.top-bar .toggle-topbar.menu-icon a{
+	color: $font_color_red;
+	font-family: $lucida;
+}
+
+.top-bar.expanded .title-area{
+	background: $backgrond_color_white;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a{
+	color:$font_color_dark_red;
+}
+
+.top-bar-section ul li > a{
+	color: $font_color_red;
+	background: $backgrond_color_white;
+	font-family: $lucida;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+	background: $backgrond_color_white;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+	color: $font_color_dark_red;
+}
+
+/*---- End Header Style-----*/
+
+/*---- Start First Section Style-----*/
+
+.large-12.columns.second{
+	margin-bottom: 35px;
+	padding-top: 20px;
+		> h1{
+		text-align: center;
+		color: $font_color_dark;
+		font-weight: bolder;
+		margin-bottom: 5px;
+		margin-top: 0px;
+		}
+		
+		>h4{
+		text-align: center;
+		color: $font_color_dark;
+		font-weight: bolder;
+		margin-bottom: 25px;
+		}
+		
+		> p{
+		@include para;
+		font-size: 1.1rem;
+		}
+		
+		a{
+			color: $font_color_white;
+		}
+		
+		> h3{
+		@include rounded_borders($backgrond_color_red, 3px);
+		background-color: $backgrond_color_red;
+		padding: 20px;
+		color: $font_color_white;
+		width: 230px;
+		margin: 0 auto;
+		margin-top: 30px;
+		text-align: center;
+		}
+}
+
+.large-12.columns.second a:hover{
+	color: $font_color_dark_red;
+}
+
+/*---- End First Section Style-----*/
+
+/*---- Start Second Section Style-----*/
+
+.large-12.columns.third{
+
+	.panel{
+		@include panel_style;
+		
+		
+		.row{
+		
+			>h2{
+				@include h2_style;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+
+.large-3.columns{
+
+	.panel{
+		padding: 1.25rem;
+		
+		> p{
+			font-size: 0.9rem;
+			margin-bottom: 15px;
+		  }
+		
+		> h4{
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 20px;
+		 }	
+	}
+}
+
+.linkage{
+		margin: 0 auto;
+		width: 100%;
+		
+		>p{
+			margin-bottom: 0;
+			font-size: small;
+		}
+		
+		a{
+			color: $font_color_red;
+		}
+		
+		a:hover{
+			color: $font_color_dark_red;
+		}
+}
+
+
+/*---- End Second Section Style-----*/
+
+/*---- Start Third Section Style-----*/
+
+.large-12.columns.fourth{
+	.row{
+		>h2{
+			@include h2_style;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		
+		>p{
+			@include para;
+			font-size: 1rem;
+			text-align: center;
+		}
+	}
+}
+
+.large-12.columns.fourth{
+	>p{
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+
+
+/*---- End Third Section Style-----*/
+
+@media only screen and (max-width: 40em) {
+
+	.top-bar-section li.active:not(.has-form) a:not(.button){
+		background-color: $backgrond_color_light_gray;
+	}
+	
+	.large-12.columns.second{
+	padding: 0 20px;
+	padding-top: 20px;
+
+	
+		> p{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		text-align: center;
+		}	
+	}
+	
+	.large-3.columns{
+
+	.panel{
+		padding: 1.25rem;
+		margin-bottom: 0.9375rem;
+		
+		> p{
+			font-size: 0.8rem;
+			margin-bottom: 15px;
+			text-align: center;
+		  }
+		
+		> h4{
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 20px;
+		 }	
+	  }
+	}
+
+	.linkage{
+			margin: 0 auto;
+			width: 100%;
+			
+			>p{
+				margin-bottom: 0;
+				font-size: small;
+				text-align: center;
+			}
+			
+			a{
+				color: $font_color_red;
+			}
+			
+			a:hover{
+				color: $font_color_dark_red;
+			}
+	}
+	
+	/*---- Start "Menu Toggle" Style-----*/
+	
+	.top-bar .toggle-topbar.menu-icon a::after{
+		box-shadow: 0 10px 0 1px $font_color_red, 0 16px 0 1px $font_color_red, 0 22px 0 1px $font_color_red;
+	}
+	
+	.top-bar .toggle-topbar.menu-icon a:hover{
+		color: $font_color_dark_red;
+	}
+	
+	.top-bar .toggle-topbar.menu-icon a:hover:after{
+		box-shadow: 0 10px 0 1px $font_color_dark_red, 0 16px 0 1px $font_color_dark_red, 0 22px 0 1px $font_color_dark_red;
+	}
+	
+	.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+	color:$font_color_dark_red;
+	background: none;
+	}
+	
+	/*---- End "Menu Toggle" Style-----*/
+
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.large-12.columns.second{
+	padding: 0 20px;
+	padding-top: 20px;
+	
+		> p{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 1.1rem;
+		line-height: 1.4;
+		}	
+	}
+	
+	.large-3.columns{
+
+	.panel{
+		padding: 1.20rem;
+		margin-bottom: 0.9375rem;
+		
+		> p{
+			font-size: 1.0rem;
+			margin-bottom: 15px;
+			text-align: center;
+		  }
+		
+		> h4{
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 20px;
+		 }	
+	  }
+	}
+
+	.linkage{
+			margin: 0 auto;
+			width: 100%;
+			
+			>p{
+				margin-bottom: 0;
+				font-size: small;
+				text-align: center;
+			}
+			
+			a{
+				color: $font_color_red;
+			}
+			
+			a:hover{
+				color: $font_color_dark_red;
+			}
+	}
+
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
